@@ -43,6 +43,9 @@ ul li a:hover {
     background: #fff;
     padding: 0.5rem;
 }
+.icon {
+    display: none;
+}
 
 div.hero-section {
     background: #304353;
@@ -117,6 +120,7 @@ div.background p {
     padding-left: 2rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
+    margin-right: 60px;
 }
 
 div.hero-background-pos {
@@ -344,4 +348,61 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    div.nav-bar {
+        position: relative;
+    }
+
+    div.nav-bar ul.nav-links {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: black;
+        width: 100%;
+    }
+
+    div.nav-bar ul.nav-links li a {
+        display: block;
+        padding: 14px 16px;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    div.nav-bar .icon {
+        display: block;
+        position: absolute;
+        right: 10%;
+    } 
+
+    button {
+        padding: .2rem;
+        text-transform: uppercase;
+    }
+
+    div.hero-section {
+        padding: 13rem 5rem;
+    }
+
+    div.snapshot-box-content {
+        display: block;
+    }
+
+    div.box1 {
+        margin-bottom: 20px;
+    }
+
+    div.background {
+        height: 100%;
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: .8rem;
+    }
 }
